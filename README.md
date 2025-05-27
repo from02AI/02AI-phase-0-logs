@@ -27,5 +27,5 @@ These raw logs let you trace the real journey:
 
 ## 🧭 Connect the dots
 
-- 🔗 [Ø2AI on Substack](https://your-substack-url-here)
-- 🔗 [Project intro thread on Twitter](https://your-thread-url-here)
+- 🔗 [Ø2AI on Substack](https://from02ai.substack.com/)
+- 🔗 [Project intro thread on Twitter-X](https://x.com/from02ai)
