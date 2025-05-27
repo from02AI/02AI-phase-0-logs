@@ -1,0 +1,135 @@
+### Doc - V
+
+### **Main Objectives Today**
+
+- Complete the **3-screen interaction cycle**
+- Add and rotate **background images, practices, and motivational gifts**
+- Ensure full shuffle logic with no repeats until cycle completes
+
+---
+
+### ✅ **What Was Achieved**
+
+### 💡 Flow Logic
+
+- Built the 3-stage interaction:
+    1. Tap to Begin
+    2. Mindfulness Practice
+    3. Motivational Gift
+- Each tap advances one stage; third tap resets and rotates to next set
+
+### 🌈 Dynamic Shuffle Engine
+
+- All three content types now rotate:
+    - ✅ 11 background images
+    - ✅ 20 mindfulness practices
+    - ✅ 20 motivational gifts
+- No repeats within a single cycle
+- After all items used, lists reshuffle and restart
+
+### 🔧 Technical Improvements
+
+- Replaced static `useState` with dynamic shuffled queues
+- Synced all screens with `currentIndex` logic
+- Ensured fallback for missing content using safe defaults
+- Bug fix: blank text was caused by placeholder arrays, now replaced with full final lists
+
+---
+
+### 🔎 Dev Style
+
+- Precision-first updates: only touched what was needed
+- Every step reviewed and understood before moving forward
+- Mid-build debugging helped reinforce flow understanding
+
+---
+
+### 🚧 What’s Next (Tomorrow)
+
+- Final polish: spacing, fade animations, or transitions
+- Add local progress tracking (e.g. session count)
+- Optional: intro screen, settings, or theme control
+- Prepare for testing and publishing
+
+---
+
+**Status:**
+
+🟢 *Core engine is working and stable*
+
+🎯 *User experience now reflects original vision*
+
+🧠 *Ready for polish, edge-cases, and deployment prep*
+
+### **1. Mental State**
+
+> Enthusiastic.
+> 
+> 
+> Yesterday’s breakthrough gave me momentum. I started seeing the app take shape, and that realization gave me a surge of energy. We had some confusion along the way, but I stayed present and committed.
+> 
+
+---
+
+### **2. Resistance & Friction**
+
+> Two main challenges:
+> 
+- **Design fatigue**: After spending time refining layouts and visuals, I started questioning the ROI. It felt like a rabbit hole. I made the decision to pause and move on — trusting we can return later if needed.
+- **Reading code**: I don’t yet understand how to read or manipulate the code confidently. When I hit this wall, I either asked for a rewrite or relied on the AI auto-fix in the platform (v0.dev). Both helped — but the gap still exists.
+
+---
+
+### **3. Breakthrough**
+
+> I realized that with AI support, I can now do things I could never even dream of before.
+> 
+> 
+> Despite moments of frustration, this shift — from *impossible* to *doable* — is massive. I'm building something real. That’s wild.
+> 
+
+---
+
+### **4. What Got Done**
+
+> All the shuffle logic is working — across images, practices, and gifts.
+> 
+- Three fully functional screens
+- All lists rotate correctly
+- Smart cycle logic prevents repeats
+- First real sense of a *living app*, not just a demo
+
+---
+
+### **5. What’s Not Working**
+
+> Covered in “Resistance.” Still hard to edit or trace code logic. This remains a learning curve.
+> 
+
+---
+
+### **6. Learning Note**
+
+> I can build a functional, creative app from zero in 2–3 days — not 2–3 weeks.
+> 
+> 
+> This realization is blowing my mind. With AI, my learning curve is faster than I imagined. I’m not in control of the code yet, but I’m now comfortable enough to *want to go deeper*.
+> 
+
+---
+
+### **7. Tomorrow’s Focus**
+
+- Finish remaining design polish
+- Understand and prepare for **deployment**
+- Maybe explore integrating a small AI feature (e.g., generate text dynamically)
+
+---
+
+### **8. Moment Worth Sharing**
+
+> I’ve spent around 5 hours today — more than expected — and I’m tired, but deeply satisfied.
+> 
+> 
+> I feel progress not just in what I built, but in who I’m becoming. I’m still learning to walk in this new space, but I’m no longer scared of the tools. In fact — I’m curious.
+>

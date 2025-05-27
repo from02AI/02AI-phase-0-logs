@@ -1,0 +1,73 @@
+## Doc
+
+
+
+### AI
+
+**App Development Log: Dev Day 15**
+Date: May 15, 2025
+Project: Minute Mind Whispers
+Focus: Planning Screen 2 (Practice Screen), Refining Prompts for Cursor, User Reflections on Tooling
+**Summary of Activities:**
+Today was dedicated to detailed planning for the implementation of Screen 2, the core "Practice Screen" of the application. We focused on defining its functionality, user experience, and preparing comprehensive prompts for AI-assisted development with Cursor. A significant portion of the day also involved the user grappling with the implications of Cursor's pricing model and credit limitations, which influenced their approach and feelings towards the tool.
+**Key Discussions & Outcomes:**
+1. **Recap of Previous Day (Dev Day 14):**
+    ◦ We briefly reviewed the outcomes of Dev Day 14 to ensure alignment before proceeding.
+2. **Initial Definition of Screen 2 Requirements:**
+    ◦ You outlined the user flow: selection from Screen 1 leads to Screen 2, initiating a 60-second mindfulness practice.
+    ◦ The core concept of a routine comprising four distinct practices was established.
+    ◦ The idea of a non-traditional visual timer (e.g., accumulating leaves) was introduced.
+3. **Iterative Refinement of the "Screen 2 Prompt Outline":**
+    ◦ We created and progressively updated the document titled "Minute Mind Whispers: Screen 2 & Practice Logic - Prompt Outline (Updated)" (ID: `screen2_prompt_dev_day_15`). This document served as the central blueprint for Screen 2.
+    ◦ **Practice Content:**
+        ▪ Differentiated between a fixed "Daily Ritual" and four other AI-generated "Goal-Oriented Rituals."
+    ◦ **Timing Clarification (Crucial Iteration):**
+        ▪ Initially, we discussed a structure of three 20-second active practices plus a concluding thought for the 60-second routine.
+        ▪ This was later **corrected and finalized to four distinct 15-second active practices** to fit the 60-second total duration, ensuring each of the four steps is an active part of the routine.
+    ◦ **Practice Guidelines (Key Refinement for UX):**
+        ▪ A significant refinement was the introduction of "General Practice Guidelines" applicable to all rituals:
+            • **Discreet:** Practices must be doable anywhere without drawing attention.
+            • **Eyes Open:** Instructions must assume the user is looking at the screen.
+            • **Minimal Movement:** No large or conspicuous movements; only small, subtle internal adjustments.
+            • **Context:** Suitable for public places (work, public transport).
+        ▪ This led to revising the example "Daily Ritual" text and the guidance for AI prompt generation to ensure all practices adhere to these principles.
+    ◦ **Visual Timer Details:** The "leaves accumulating" theme was maintained.
+    ◦ **Controls:** "Pause," "Skip," and "Back to Home" buttons were included.
+    ◦ **Navigation:** Post-routine navigation to a future "Screen 3" was noted.
+4. **Strategy for Interacting with Cursor:**
+    ◦ We discussed the best approach for using the detailed `screen2_prompt_dev_day_15` document with Cursor, agreeing that breaking it down into smaller, focused prompts for specific features would be more effective than sending the entire document at once.
+5. **Generation of Specific Prompts for Cursor:**
+    ◦ Based on the refined blueprint, I formulated three sequential prompts for you to use with Cursor:
+        1. **Prompt 1:** Focused on creating `PracticeScreen.tsx` and setting up basic navigation from `LaunchScreen.tsx`, including passing the `practiceType` prop.
+        2. **Prompt 2:** Focused on implementing the display logic for the four 15-second practice instructions and the specific content for the "Daily Ritual" within `PracticeScreen.tsx`.
+        3. **Prompt 3:** Focused on adding placeholder logic to `PracticeScreen.tsx` for the four "Goal-Oriented Rituals," ensuring they use the same 4x15 second timing and display structure.
+6. **Review of Your Cursor Development Session:**
+    ◦ You shared a log of your interaction with Cursor.
+    ◦ The log indicated successful implementation of the first two prompts (creation of `PracticeScreen.tsx`, navigation, and the "Daily Ritual" display with correct timing).
+    ◦ It appeared there was a point where Cursor may not have fully completed the implementation for the third prompt (placeholders for goal-oriented rituals), which you noted in your conversation with it.
+**User Reflections on Tooling (Cursor):**
+• **Initial Enthusiasm & Subsequent Disappointment:** After a very positive initial experience with Cursor's capabilities ("honeymoon phase"), encountering the credit limitations of the Pro plan ($20/month for 500 fast requests) led to significant disappointment and frustration. Two days of use consumed 150 requests, highlighting how quickly the monthly quota could be depleted.
+• **Shift in Focus:** Instead of focusing on app development, a considerable amount of time was spent researching Cursor's pricing, community feedback on credit usage, and strategies for working within these constraints. This felt like a burden and a diversion from the creative process.
+• **Concerns about Usability & Cost-Effectiveness:** The strict limitations raised concerns about the tool's long-term usability for personal projects without incurring additional costs beyond the monthly subscription. This led to second thoughts about its suitability compared to more open or flexible LLMs where free or pro plans felt less restrictive.
+• **Subscription Decision Change:** The initial intention to opt for a yearly subscription to Cursor was revised. The plan is now to start with a one-month subscription to evaluate the feasibility of managing the credit limitations effectively.
+• **Feeling of Naivety:** A feeling of being unprepared for such strict limitations in a paid "Pro" tool, especially when compared to experiences with other LLMs that offer more perceived value within their free or standard pro tiers.
+• **Challenge of "Wise Usage":** The need to be highly considerate and minimalistic in using Cursor to avoid burning through credits quickly was perceived as a challenging and potentially creativity-stifling task.
+**Key Artifacts:**
+• **"Minute Mind Whispers: Screen 2 & Practice Logic - Prompt Outline (Updated)" (ID: `screen2_prompt_dev_day_15`):** This document was the primary output of today's planning efforts, containing the detailed specifications for Screen 2.
+**End of Day Status:**
+• A comprehensive plan and detailed prompt structure for Screen 2 are in place.
+• Initial development of `PracticeScreen.tsx` has begun with Cursor, with the core navigation and "Daily Ritual" functionality reportedly working.
+• The implementation of placeholder logic for goal-oriented rituals was the last active step with Cursor and may require further attention.
+• User is feeling constrained by Cursor's credit system and is re-evaluating their long-term approach to using the tool.
+**Plan for Next Dev Day:**
+• Address user's strategy for working with Cursor given the credit limitations.
+• Verify the implementation of placeholder logic for goal-oriented rituals in `PracticeScreen.tsx`.
+• Proceed with the next features for Screen 2 as outlined in the `screen2_prompt_dev_day_15` document, likely starting with the visual timer animation (leaves), keeping mindful of efficient prompt usage.
+• Define the specific goals for the four "Goal-Oriented Rituals" to refine the AI prompts.
+
+
+### Me
+
+Okay so this is my documentation for today and Dev build 15 and and I have to say that it was a big fall from a yesterday and I was in a very uplifted enthusiastic mode a to continue working and doing a great things with the cursor but when I started to work and I saw that like message of upgrading and because my request Bank is almost finished and the apparently and that was a big mistake of mine but I'm not sure yet how to to to do it differently and but the thing is that in two days i've used 150 pro Plan or fast requests and the monthly and plan contains only 500 so I need to be very I don't know I just looks like it's going to run out very fast and I also read about them many people who says that it's not enough and they need to and pay extra and I don't want to get to the place that I'm paying more than $20 a month and so I feel like a little bit that it was my mistake not reading and understanding and the full details and then I was a very excited and the results were amazing so I was very drone into it and then only now I understand the disease this can be a big beautiful in a cursor and then it's it's either paying a lot in order to be able to really create things and or not using it I guess or find the middle way which this is what I'm trying to do now is how to use it wisely in the efficiently in order to not burn all my credits and so fast and it seems like it's not such an easy task to do it and this is actually instead of developing the app today is what I had to spend time on to understand a how to to work and what people say about it or recommendations and stuff and so basically there were no actual death today and I'm very disappointed and that it became more of the technical small details and that feels very like a burden and not using freely but considerably with a platform that they charge you $20 a month which is not a small amount and it looks like it also it can be very challenging or frustrating just to put energy into into this restrictions stuff and then like have to really prepare and use it very very minimalistic or why not to spend the this this whole bunch of credits and too soon and yeah I feel like it's yesterday it was like a honeymoon I I was overwhelmed by the performance of actually something that it's not very usable in this way of pricing and I will have to think what to do about it it's actually giving me and second thoughts and about using it and right now I have one month of pro but then just investing time and energy to understand how to be able to to work without such a burden it's a really hard challenging mission and then I am not sure if this is not a like software that fit for a more developed project or companies and not something for a personal use or running a use a so I will have to spend some time more in order to understand how to work with it and how to be able to to get as much as possible in this limited every plan and then yeah so time wasted today on bureaucracy with cursor basically
+
+I think the damn. I have two things to add one is that at the beginning of the day I was intent in intention to pay for a yearly subscription and then after encountering all this new information I think that right now I will start with one month. And see if I can. manage this strict limitation and and the other thing that I wanted to mention is that I came kind of naive from the expieriences with other LLMs where i's more open and flexiblem and i dodn't think it can be so different, you pay for pro but you get a very strict limitation, compae to othe platforms that I get all the value that i needed whithin the  free or pro plan.

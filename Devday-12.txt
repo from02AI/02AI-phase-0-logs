@@ -1,0 +1,96 @@
+## Doc
+
+### AI
+
+## Work Day 12 Log - May 12, 2025
+
+**Overall Goal for the Day:** Make a decision on the primary AI-assisted development tool and understand how to begin app creation with it.
+
+**Key Activities & Technical Discussions:**
+
+1. **Recap of Pre-Day 12 Breakthrough (Wave Background):**
+    - **Activity:** You shared an update on a significant breakthrough you achieved independently regarding the app's wave background.
+    - **Process:**
+        1. Uploaded a reference image to Midjourney to generate a prompt.
+        2. Used GPT to create code based on that Midjourney prompt.
+        3. Initial render was not good.
+        4. Provided the reference image *directly* to the AI (GPT) and asked for code generation again.
+        5. GPT created HTML and rendered it successfully in an artifact.
+        6. Asked GPT to convert this to React code for your app.
+    - **Outcome/Challenge:** The React implementation correctly reflected the design but had a location issue (showed only at the top, not full screen).
+    - **Learning:** This highlighted a successful multi-AI workflow for a complex visual element and identified a new integration challenge (positioning in React).
+2. **Deep Dive Research: AI Development Tooling:**
+    - **Challenge Raised:** You needed to decide on the best software to continue building your app ("Minute Mind Whispers") and for your learning process, specifically as a beginner aiming to eventually consult others on AI tools.
+    - **Activity:** Requested in-depth research comparing:
+        - UI Generation Platforms: Lovable.dev, v0.dev, and similar.
+        - AI-Powered Code Editors/IDEs: Cursor, Windsurf AI (clarified from "Winsdurf"), and similar.
+    - **Focus:** Understanding differences, abilities, limitations, and learning curves.
+    - **My Action:** I conducted research and presented a comparison of these tool categories and specific tools.
+3. **Tooling Discussion & Personalized Re-evaluation:**
+    - **User Learning:** Gained an understanding of the distinction between AI platforms that generate full UIs/apps (e.g., Lovable, v0.dev) versus AI tools that assist within a code editor (e.g., Cursor, Windsurf AI, GitHub Copilot).
+    - **Challenge Raised:** You provided crucial personal context:
+        - Very beginner with no prior codebase experience.
+        - Primary goal: Learn the AI field comprehensively for app building *and* consulting.
+        - Negative experience with Lovable: inability to easily edit code for complex issues (like the background), restrictive free plan (5 prompts/day).
+        - Positive, simpler experience with v0.dev for a previous app.
+    - **Solution/Shift:** This new context led to a re-evaluation of my initial tool recommendations. The importance of being able to see, understand, and modify code (with AI help) for your learning and consulting goals became paramount.
+4. **Refining Tool Choice - Skill Transferability & Learning Strategy:**
+    - **Challenges Raised:**
+        - If moving to Cursor, would any skills from Lovable be lost? Would Cursor skills aid a future shift to Lovable-like tools?
+        - Clarification on v0.dev vs. Lovable differences and your past experiences.
+        - Uncertainty about Cursor vs. Windsurf AI practical differences and whether to learn one or both.
+        - A broader question on learning strategy: breadth (many tools) vs. depth (one good tool) in the rapidly changing AI field.
+    - **User Learnings/Solutions Discussed:**
+        - **Skill Transferability:** Core coding skills and AI-assisted coding skills (from Cursor) are fundamental and highly transferable, making it easier to understand/evaluate/customize output from platforms like Lovable. Prompt engineering is a general skill applicable in both.
+        - **v0.dev vs. Lovable:** v0.dev is frontend UI-focused (simpler problem space), while Lovable aims for full-stack (more complex, potentially harder to fix if AI errs and direct code editing is limited).
+        - **Cursor vs. Windsurf AI:** Cursor as an AI co-pilot within a VS Code-like environment (granular direction); Windsurf AI as a more autonomous "agent" (broader task delegation). Skills are largely transferable; starting with one (e.g., Cursor) is fine.
+        - **Learning Strategy:** Prioritize foundational coding skills and deep expertise in one versatile AI tool category (e.g., AI-assisted code editors) first. Then build strategic breadth by becoming aware of other tool categories. Adaptability and learning *how to learn* are key.
+5. **Decision to Use Cursor & Addressing Initial Hurdles:**
+    - **Key Decision:** You decided to start with **Cursor**.
+    - **Challenge Raised (as a beginner with no development knowledge):**
+        - What to do with the code Cursor generates.
+        - How to render/run the generated code to see the app.
+    - **User Learning/Solutions Provided:**
+        - **Cursor Workflow:** Explained project setup, code generation methods (chat, inline), saving files, and the iterative process.
+        - **Rendering (Web Focus):** Detailed how to view HTML/CSS/JS (direct browser open) vs. React/framework apps (requiring a development server like Vite's).
+        - **Tutorials:** Shared links to recommended Cursor tutorials (Official Docs, GeeksforGeeks, DEV Community).
+6. **Crafting an Initial Prompt for "Minute Mind Whispers" in Cursor:**
+    - **Activity:** You asked for assistance in creating the best starting prompt for Cursor to build the app.
+    - **My Action:** After an initial misstep (asking for details you felt I should have), I used conversation retrieval to recall specifics of "Minute Mind Whispers" (features, Screen 1 layout/styling, wave background concept, tech stack ideas like React/TS/Tailwind).
+    - **Solution:** I synthesized this into a comprehensive, multi-part prompt strategy for Cursor, focusing on project setup, `LaunchScreen.tsx` (with detailed elements, styling, and a placeholder `WaveBackground.tsx` component), and `App.tsx` for basic structure.
+7. **Guidance for Beginners Using Cursor:**
+    - **Challenges Raised:**
+        - How to know if a prompt is too large for Cursor.
+        - How to review/check Cursor's generated code without being proficient in reading code.
+        - Not knowing how to run the app via the terminal (explicitly stating "I don't have development knowledge").
+    - **User Learning/Solutions Provided:**
+        - **Prompt Size:** Signs a prompt is too large (incomplete output, ignored instructions, etc.) and the strategy of trying the full prompt first, then breaking it down if needed.
+        - **Code Review for Non-Coders:** Emphasized visual rendering, basic functional testing (button clicks), using Cursor's AI to explain code, and checking file structure.
+        - **Running the App (Terminal Basics):** Provided a very fundamental, step-by-step explanation of:
+            - What a terminal is in an IDE like Cursor.
+            - What `npm`/`yarn` and a "development server" are.
+            - The purpose of commands like `npm run dev`.
+            - How to open the terminal in Cursor, what command to type, what output to expect (including the `localhost` address), and how to open that address in a browser.
+            - Basic troubleshooting tips if the command fails.
+
+**Summary of Your Key Learnings Today (Technical Focus):**
+
+- Deeper understanding of the different categories of AI development tools and their respective strengths/weaknesses for your goals.
+- The importance of direct code interaction (even with AI assistance) for learning and building transferable skills, especially for consulting.
+- The general workflow for using an AI-assisted code editor like Cursor: project setup, prompting for code, saving, and the iterative cycle of development.
+- The concept of a "development server" and terminal commands (`npm run dev`) for running and viewing modern web applications (like React apps built with Vite) locally.
+- Strategies for evaluating AI-generated code without deep code-reading ability, relying on visual output, basic functional tests, and asking the AI for explanations.
+- How to structure prompts for an AI code generator like Cursor, starting with overall structure and then detailing components and features.
+
+**Breakthroughs/Key Decisions:**
+
+- **Decision:** You chose **Cursor** as your primary tool to start with for building "Minute Mind Whispers."
+- **Understanding:** A clearer understanding of how to approach the app development process as a beginner leveraging a powerful AI coding assistant.
+
+This was a very productive day focused on research, decision-making, and understanding the foundational steps for working with your chosen tool. The next steps will involve putting this into practice with Cursor!
+
+
+
+### Me
+
+Okay and so today was kind of a big day and after last week I was struggling with designing the background with the lovable on the weekend I am talked with a friend and we found some breakthrough to a very small one and with the design but I started to think and whether I need to rethink recheck them basically my learning roadmap that was based on use every time different platform for the development and then learn it no like water the features and then what what I felt in this app that something the the designing of the background was significant significantly challenging and I had the code and the edit on GitHub and I used llms to create some code and fixes and basically lovable which couldn't fix this background with the Trice that I that I've done and was only a tool for rendering so I couldn't directly add it to the code on it and I couldn't I had to use GitHub and I couldn't fix it with lovable so I started this working day with a question about all this road map whether it is with a lovable and similar platforms that as I understand are very good with designing uI front end and focused on automation of the AI to create and fix and do everything and when you get into an issue and you need something special or Surgical than sometimes the the limitation not being able to get surgical on the code can create a challenges and I understand it it's maybe good for some things and but we dedicated me and Gemini and some research about it and what I need what are the potential platforms and I have to say that first of all I'm a very beginner so it's not that I exactly know or understand what I need but after a.m. Discussing with the gemini he recommended to move to cursor and then for the reasons that it will help me to understand and learn the code better with the help of AI and also to strengthen my promptings prompting skills and using this platform and understanding through it what did did the different parts of the code and many other things although it's a deep learning curve but it can help me to to be able to understand it deeply and then I can easily shift to understand or work with other platforms and and I have to say that I thought that I will get to cursor a little bit further and I thought that by the previous roadmap I will towards like more of the learning or or knowing as much as platforms and tools that's possible and and now it changed to be more of focus on one platform which is considered advanced and maybe jump and through some levels if maybe easier or more accessible and other platforms and dive deep into the deep water and so it is a big shift with the road map and my approach and off this learning process right now it's to be focused and try to expertise about cursor and am I when I feel confident enough then I will go and try to maybe understand other tools if I will feel that is needed so it's also a change in a way that it's not like small steps right now it's a big step and then it's a kind of on one hand exciting and on the other hand I have like a a concerns and preparing myself for this deep learning mode and so even like a small difference is that with 0v.dev lovable I was just logging and prompting and start to work it was very intuitive but with cursor i am I feel that I need to learn before I am can do things even basic things in order to feel oriented or confident in the same in this area and so I started with some tutorials and their blogs that will help me to get in the basic understanding and then I just did some very basic login and downloads and then I I feel that the foundations or the very very very beginning of them is quite ready and then I will be able tomorrow I think to start and actually working with it but I feel that it's already feels different with the way of working and learning because it is a an area that I feel that it's more advanced and then I will have to dedicate more time with everything that I do to learn what I need to do before I actually do it so i'm preparing myself for a slower procedure for process and and it will be each step will be deeper and slower

@@ -1,0 +1,110 @@
+### Doc - V
+
+### 📝 Overview
+
+Today's session focused on refining Screen 3 (Motivational Gift) for maximum readability over varied background images, finalizing the shuffle/reset logic, and preparing to wrap up the sprint.
+
+## 1. Screen 3 Legibility Enhancements
+
+**Issues Identified:**
+
+- Text readability suffered when overlaid directly on vibrant, busy artwork.
+- Multiple attempts using panels, gradients, blurs, and shadows did not yield an optimal balance.
+- Automatic wrapping often produced uneven, three-line breaks.
+- **Solutions Explored:**
+1. **White Circle Panel** – Too heavy, obscured artwork.
+2. **Glassmorphic Blur** – Subtle but still hid art and didn’t guarantee legibility.
+3. **Pure Drop-Shadow Text** – Strong outline/shadow, but still clashed with brightest areas.
+4. **Bottom-Half Gradient** – Industry-standard pattern; improved contrast but initial opacity/height settings were too dark or too tall.
+5. **Dedicated Text Sheet** – Final solution: stack layout with image above and a semi-transparent bottom panel containing exactly two lines of text.
+
+**Final Implementation:**
+
+- **Stacked Layout**: Image fills top flex section; bottom panel (bg-black/40) hosts text.
+- **Manual Breaks**: Hard-coded `<br/>` for each motivational sentence to ensure two balanced lines.
+- **Adjustable Panel Opacity**: Tuned to `bg-black/40` and later suggested `/30` or `/20` for further lightening.
+- **Dynamic Wrapping (Optional)**: Added logic to split any quote longer than ~30 characters at the midpoint if needed.
+
+**Result:**
+
+- Third card now displays the motivational quote in two evenly distributed lines over a light, semi-transparent panel, preserving full artwork visibility.
+
+---
+
+## 2. Shuffle & Reset Logic Verification
+
+**Requirement:** Non-repeating cycles of image/practice/gift until each list is exhausted, then full reshuffle.
+
+**Current Code Behavior:**
+
+- Lists are shuffled once on component mount.
+- `currentIndex` advances by 1 after each 3-step session (via `sessionEnded` flag and `useEffect`).
+- When `currentIndex` reaches the end (`>= minLength`), all lists are reshuffled and `currentIndex` resets to 0.
+
+**Confirmation:** Implementation already meets the requirement; no additional code changes needed.
+
+---
+
+## 3. Outstanding Tasks & Next Steps
+
+1. **Screen 3 Panel Opacity Tweak** – Consider `bg-black/30` or `/20` for lighter effect.
+2. **Responsive Text Wrapping** – If dynamic reports grow, revisit auto-split logic or CSS-only solutions.
+3. **Final QA** – Tap through all permutations to verify no repeats and visual consistency across devices.
+
+---
+
+## 4. Daily Reflection – April 23, 2025
+
+### 1. 🧠 Mental State
+
+**Frustrated, drained.**
+
+- It was hard to work with the assistant today. The previous chat got stuck, and continuing the work was challenging.
+- Memory loss and context issues made it frustrating to reestablish continuity.
+
+### 2. 🚧 Resistance
+
+**Technical confusion and communication gaps.**
+
+- Most resistance came from trying to align instructions with the actual code.
+- Sometimes instructions didn’t match the current file, or full code blocks replaced small adjustments, limiting learning.
+
+### 3. ✨ Breakthrough
+
+**Screen 3 layout clarity.**
+
+- Despite the struggle, the layout for Card 3 finally looks good and readable.
+- Developed stronger confidence in handling the code directly.
+- Realized a new pattern: I can present design problems and let the assistant suggest 2–3 strong solutions, then test and choose what works best.
+- Also, a key moment happened when I explained my own logic for how text wrapping should work. This helped guide the assistant toward the actual solution after several failed attempts.
+
+### 4. 🎯 What Got Done
+
+We finalized Screen 3 visual design and confirmed correct shuffle/reset logic implementation.
+
+### 5. 📉 What’s Not Working
+
+Still didn’t reach deployment or AI API integration.
+
+- Felt like we should have moved further into technical finalization today.
+
+### 6. 📚 Learning Note
+
+Learned more about how to work with the code and how to guide or respond to AI code generation.
+
+### 7. 🧱 Tomorrow’s Focus
+
+Finish all remaining technical work:
+
+- Deploy the app
+- Integrate the AI API
+
+### 8. 📸 Moment Worth Sharing
+
+“Some days, refinement takes more than creation. Today was one of those days.”
+Also: the moment I realized that giving clear explanations of logic to the assistant can unlock better results—even when multiple solutions failed before.
+
+---
+
+**Session Conclusion:**
+We wrapped up the core UX for all three screens, solidified shuffle logic, and finalized the most robust pattern for presenting motivational text over dynamic artwork. Ready for final polish and release.

@@ -1,0 +1,98 @@
+## Doc
+
+## **GPT + User Collaboration Breakdown**
+
+**Title:** Hitting a wall — big time. 6 hours of burned effort with GPT and v0.dev
+
+**Duration:** ~6 hours
+
+**Outcome:** No progress achieved, session ended in frustration
+
+### Emotional and Experiential Summary
+
+This session was the most difficult and frustrating to date. Despite investing nearly six hours of focused work, we finished with no result, no meaningful progress, and reverted to the same backup code we started with. The emotional toll was high: the session began with clarity and promise, but quickly descended into confusion, circular problem-solving, and broken functionality.
+
+The sense of wasted time and mental energy was overwhelming. By the end, trust in the assistant (GPT) was deeply eroded. GPT’s presence, rather than helping, became part of the problem.
+
+---
+
+### 1. Issue One: Screen 3 Design Break
+
+**Initial trigger:** Integration of new code that broke Screen 3 layout.
+
+**Attempts made:**
+
+- Several rounds of trial fixes provided by GPT
+- Design kept breaking or not rendering as intended
+
+**Resolution:**
+
+- Only successful action was GPT’s suggestion to manually create a backup file and restore it when needed. This became the single most useful and stabilizing move of the day.
+
+---
+
+### 2. Issue Two: AI API Integration Failure
+
+**Problem:**
+
+- API call to generate a sentence from GPT was returning HTML instead of expected JSON.
+- Response appeared successful (Status 200), but the body returned was not usable
+- DevTools showed fetch was reaching the endpoint, but the response format was incorrect
+
+**Root problem (still unresolved):**
+
+- API route implementation in `route.ts` appeared correct
+- Environment variable was set
+- Code and server structure passed validation
+- But actual API output remained incorrect, and GPT failed to diagnose the true root cause
+
+**Attempts made:**
+
+- Multiple iterations of `route.ts`
+- File tree inspection
+- DevTools Network + Console tracing
+- Fetch request tests in browser console
+- v0.dev's own autofix suggestions were ineffective
+- Tried switching to Gemini 2.5 Beta for comparison — did not help
+
+**Persistent breakdowns:**
+
+- GPT kept repeating the same “fixes” that had already been tested and proven not to work
+- Many answers were either vague, overly technical, or failed to consider user’s current screen/context
+- Instructional gaps and ambiguous technical language caused confusion and fatigue
+- All AI attempts broke the original design
+
+**Impact:**
+
+- The assistant was not responsive to the reality of the user’s limitations and screen constraints
+- Communication mismatch became the defining pattern
+- User began to feel that GPT was hallucinating or unable to truly debug the issue
+- Major doubt raised around the feasibility of continuing AI-led development without real human help
+
+---
+
+### Reflections on GPT + AI Performance
+
+- **Positives:**
+    - The backup file solution was clear and useful
+    - Patience and continuity were maintained across iterations
+- **Negatives:**
+    - Repetition of failed strategies without acknowledging failure
+    - Lack of actionable clarity in instructions
+    - Inability to diagnose actual root cause of API response issue
+    - Did not adjust communication style to match user’s need for simpler, more guided steps
+    - v0.dev autofixes + Gemini also failed → AI-led support in its current form feels untrustworthy
+
+---
+
+### Trust Breakdown
+
+User expressed serious doubt about GPT’s reliability as a coding partner. There is a sense of disillusionment—what was expected to be a powerful collaboration felt instead like a loop of broken logic and wasted time. There is also a broader concern now about AI being insufficient as a teaching/support system for beginners.
+
+Immediate next steps will require:
+
+1. A repair of trust
+2. Simpler, more grounded communication
+3. Validation of every step in real time
+4. Honest recognition from GPT when things aren’t working
+5. Reassessment of whether future technical tasks should involve human intervention rather than AI-only support
